@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel=stylesheet href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        Search Engine with a Boolean Builder
+      </a>
+    </div>
+  </nav>
+
+  <div class="container searchContainer">
+    <div class="search card card-body">
+      <h1>Search</h1>
+      <p class="lead">Enter Document............</p>
+      <input type="text" id="search-user" class="form-control" placeholder="Search">
+    </div>
+    <br>
+    <div id="profile"></div>
+  </div>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("search-user").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+  <footer class="mt-5 p-3 text-center bg-light">
+    SEARCH &copy;
+  </footer>
+
+</body>
+</html>
